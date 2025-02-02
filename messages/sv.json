@@ -1,0 +1,17 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"hello_world": "Hej, {name} från sv!",
+	"dashboard": "Översikt",
+	"sign_in": "Logga in",
+	"sign_out": "Logga ut",
+	"register": "Registrera",
+	"submit": "Bekräfta",
+	"username": "Användarnamn",
+	"desired_username": "Önskat användarnamn",
+	"enter_username": "Ange ditt användarnamn",
+	"enter_desired_username": "Ange ditt önskade användarnamn",
+	"email": "E-post",
+	"password": "Lösenord",
+	"confirm_password": "Bekräfta lösenord",
+	"selected": "Vald"
+}

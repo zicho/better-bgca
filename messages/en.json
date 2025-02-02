@@ -1,0 +1,17 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"hello_world": "Hello, {name} from en!",
+	"dashboard": "Dashboard",
+	"sign_in": "Sign in",
+	"sign_out": "Sign out",
+	"register": "Register",
+	"submit": "Submit",
+	"username": "Username",
+	"desired_username": "Desired username",
+	"enter_username": "Enter your username",
+	"enter_desired_username": "Enter your desired username",
+	"email": "Email",
+	"password": "Password",
+	"confirm_password": "Confirm password",
+	"selected": "Selected"
+}
