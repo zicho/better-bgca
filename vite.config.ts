@@ -1,6 +1,6 @@
 import { paraglide } from '@inlang/paraglide-sveltekit/vite';
-import { defineConfig } from 'vitest/config';
 import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
 	plugins: [
@@ -12,6 +12,7 @@ export default defineConfig({
 	],
 
 	test: {
-		include: ['src/**/*.{test,spec}.{js,ts}']
+		include: ['src/**/*.{test,spec}.{js,ts}'],
+		globalSetup: ['./src/lib/tests/setup.ts']
 	}
 });

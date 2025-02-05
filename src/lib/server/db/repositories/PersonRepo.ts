@@ -7,6 +7,7 @@ export class PersonRepo extends BaseRepo<'person', PersonTable> {
 	constructor() {
 		super('person'); // Pass the table key to the BaseRepo constructor
 	}
+	
 	async findByName(name: string): Promise<Person | null> {
 		const result = await db
 			.selectFrom(this.tableKey)

@@ -17,7 +17,7 @@ export abstract class BaseRepo<TTableKey extends keyof Database, TTableEntity ex
 		return result as TTableEntity | null;
 	}
 
-	async getMany({ limit }: { limit: number }): Promise<TTableEntity[]> {
+	async getMany({ limit = 100 }: { limit?: number } = {}): Promise<TTableEntity[]> {
 		const result = await db
 			.selectFrom(this.tableKey as keyof Database)
 			.selectAll()

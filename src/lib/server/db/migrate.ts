@@ -1,3 +1,4 @@
+import { PRIVATE_DB_NAME } from '$env/static/private';
 import { Migrator } from 'kysely';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
@@ -10,6 +11,9 @@ const __dirname = path.dirname(__filename);
 
 export async function migrateToLatest() {
 	// custom migration provider to use with TS files since Kysely "FileMigrationprovider" did not work
+
+	const TEST_DB_NAME = PRIVATE_DB_NAME;
+
 	const migrator = new Migrator({
 		db,
 		provider: new TypeScriptFileMigrationProvider(path.join(__dirname, '..', 'db', 'migrations'))
